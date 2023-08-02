@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 # install nginx on remote server
-
 sudo apt update
 sudo apt install nginx -y
 sudo touch /var/www/html/index.html
-sudo ufw allow 'Nginx HTTP'
-
 echo "Holberton School" | sudo tee /var/www/html/index.html
-sudo ngix -t 
 sudo service nginx restart
