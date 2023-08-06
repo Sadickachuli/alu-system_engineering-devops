@@ -8,10 +8,8 @@ sudo apt-get install -y nginx
 # Creating an index.html page
 echo "Holberton School" | sudo tee /var/www/html/index.html
 
-# Performing a "moved permanently redirection" (301)
-
 # Performing a "moved redirection permanently" (301)
->>>>>>> c3aa5820041134d6643b6316bf1715d9dbb27dec
+
 new_string="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/Sadickachuli permanent;"
 sudo sed -i "s/server_name _;/$new_string/" /etc/nginx/sites-enabled/default
 
