@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #configuring web-01 to have an HTTP response header
 
 sudo apt remove --purge nginx nginx-full nginx-common -y
